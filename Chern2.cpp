@@ -104,15 +104,15 @@ bool isKPeriodic(string& str, int K)
 
 	if (iter_text_save.size() == 0)
 	{
-		int save_nCh = n_Str;
-		while (save_nCh-- > 0)
+		int save_n_Str = n_Str;
+		while (save_n_Str-- > 0)
 		{
-			if (str[0] == str[save_nCh])
+			if (str[0] == str[save_n_Str])
 				cout << " " << endl;
 			else break;
 		}
 
-		if (!++save_nCh)
+		if (!++save_n_Str)
 		{
 			if (K == 1)
 				return true;
