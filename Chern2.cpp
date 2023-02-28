@@ -6,10 +6,10 @@ bool isKPeriodic(string& str, int K)
 {
 	int n_Str = str.size();
 	int n_Int = 9;
-	
+
 	string iter_text;
 	string iter_text_save;
-	
+
 	int word_size(0);
 	int word_size2(0);
 
@@ -89,9 +89,8 @@ bool isKPeriodic(string& str, int K)
 
 		while (save_size-- > 0)
 		{
-			if (iter_text_save[0] == iter_text_save[save_size])
-				cout << " " << endl;
-			else break;
+			if (!(iter_text_save[0] == iter_text_save[save_size]))
+				break;
 		}
 
 		if (!++save_size)
@@ -107,9 +106,8 @@ bool isKPeriodic(string& str, int K)
 		int save_n_Str = n_Str;
 		while (save_n_Str-- > 0)
 		{
-			if (str[0] == str[save_n_Str])
-				cout << " " << endl;
-			else break;
+			if (!(str[0] == str[save_n_Str]))
+				break;
 		}
 
 		if (!++save_n_Str)
